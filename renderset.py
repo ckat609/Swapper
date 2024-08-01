@@ -67,13 +67,13 @@ def generateCollections(collections):
             # collections
             newCollectionName = f"{prefix}_{collection.name.removeprefix(templateString)}_{variation}"
             newCollection = col.new(newCollectionName)
-            # newCollection.exclude = True
+            
             bpy.context.scene.collection.children.link(newCollection)
             generatedCollections.append(newCollection)
             bpy.context.view_layer.layer_collection.children[newCollectionName].exclude = True
 
             # renderset
-            newContext = bpy.context.scene.render_set_contexts.add()
+            newContext = bpy.context.scene.renderset_contexts.add()
             newContext.custom_name = newCollection.name
 
             # objects
@@ -83,11 +83,21 @@ def generateCollections(collections):
     return generatedCollections
 
 
+def generateRendersets(collections):
+    for collection in collections:
+        newContext = bpy.context.scene.renderset_contexts.add()
+        newContext.custom_name = collection.name
+        
+
+    return False
+
 def assignCollectionToRenderset(collections):
     # this is where we want to iterate over each context and asssign the collections that we want to render
     # for context in bpy.context.scene.render_set_contexts:
-    for collection in collections:
+    for idx, collection in collections:
+        print(f"****************** {idx} --- {collection.name}")
         bpy.context.scene.render_set_contexts[collection.name]
+        bpy.data.scenes["Scene"].renderset_contexts[idx].id_data.view_layers['ViewLayer'].layer_collection.children[collection.name].exclude = False
 
     return False
 
