@@ -1,5 +1,6 @@
 # context.area: EMPTY
 import bpy
+import time
 
 filename = bpy.path.basename(
     bpy.context.blend_data.filepath).removesuffix('.blend')
@@ -91,13 +92,17 @@ def generateRendersets(collections):
 
     return False
 
-def assignCollectionToRenderset(collections):
+def assignCollectionToRenderset():
     # this is where we want to iterate over each context and asssign the collections that we want to render
     # for context in bpy.context.scene.render_set_contexts:
-    for idx, collection in collections:
-        print(f"****************** {idx} --- {collection.name}")
-        bpy.context.scene.render_set_contexts[collection.name]
-        bpy.data.scenes["Scene"].renderset_contexts[idx].id_data.view_layers['ViewLayer'].layer_collection.children[collection.name].exclude = False
+    renderset_contexts = bpy.data.scenes["Scene"].renderset_contexts
+
+    for idx, renderset_context in enumerate(renderset_contexts):
+        aName = renderset_context.custom_name
+        print(f"****************** {renderset_context.custom_name} --- {aName in renderset_context.id_data.view_layers['View Layer'].layer_collection.children.keys()}")
+        
+        if(aName in renderset_context.id_data.view_layers['View Layer'].layer_collection.children.keys()):
+            renderset_context.id_data.view_layers['View Layer'].layer_collection.children[aName].exclude = False
 
     return False
 
@@ -107,5 +112,5 @@ def assignCollectionToRenderset(collections):
 
 templates = getAllTemplateCollections()
 generatedCollections = generateCollections(templates)
-assignCollectionToRenderset(generatedCollections)
+assignCollectionToRenderset()
 
