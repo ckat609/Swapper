@@ -5,7 +5,7 @@ import time
 filename = bpy.path.basename(
     bpy.context.blend_data.filepath).removesuffix('.blend')
 templateString = "template_"
-templateStringsToIgnore = ['template_', 'studio_']
+templateStringsToIncludeInAll = ['studio_']
 prefix = "decorplus"
 variations = {
     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyWood": "woodWhite", "dummyPlastic": "plasticWhite"},
@@ -75,8 +75,8 @@ def generateCollections(collections):
             bpy.context.view_layer.layer_collection.children[newCollectionName].exclude = True
 
             # objects
-            duplicateObjectsInCollectionAssignModify(
-                collection, newCollection, variations)
+#            duplicateObjectsInCollectionAssignModify(
+#                collection, newCollection, variations)
 
     return generatedCollections
 
@@ -90,29 +90,40 @@ def generateRendersets(collections):
 
     return generatedRendersets
 
-def assignCollectionToRenderset(collections, rendersets):
-    # this is where we want to iterate over each context and asssign the collections that we want to render
-    # for context in bpy.context.scene.render_set_contexts:
-    renderset_contexts = bpy.data.scenes["Scene"].renderset_contexts
 
-    for idx, renderset in enumerate(rendersets):
-        bpy.data.scenes["Scene"].renderset_context_index=idx
-        aName = renderset.custom_name
-        # print(f"****************** {renderset.custom_name} --- {aName in renderset_contexts[idx].id_data.view_layers['View Layer'].layer_collection.children.keys()}")
-        
-        if(aName in renderset.id_data.view_layers['View Layer'].layer_collection.children.keys()):
-            bpy.data.scenes["Scene"].view_layers["View Layer"].layer_collection.children[aName].exclude=False
+def assignCollectionToRenderset():
+#    bpy.data.scenes["Scene"].renderset_context_index = 0
+    
+    scene = "Scene"
+    viewlayer = "View Layer"
+    
+    contexts = bpy.data.scenes[scene].renderset_contexts
+    collections = bpy.data.scenes[scene].id_data.view_layers[viewlayer].layer_collection.children
 
-        time.sleep(1)
+    print(f"**************** {len(contexts)} CONTEXTS **************** {contexts}")
+    print(f"**************** COLLECTIONS **************** {collections}")
+
+    for idx in range(len(contexts.values())):
+        rcName = contexts[idx].custom_name
+        print(f"--------------- {idx} renderset: {rcName} ---------------")
+        for jdx, collection in enumerate(collections.values()):
+            cName = collection.name
+            print(f"**************** collection {cName}")
+            collection.exclude = True
+            if(rcName == cName):
+                print(f"**************** {cName} - {rcName} --- {cName == rcName}")
+                collection.exclude = False
+        bpy.data.scenes["Scene"].renderset_context_index = idx
+
 
     return False
 
 
 
-
-
 templates = getAllTemplateCollections()
 generatedCollections = generateCollections(templates)
-generateRendersets = generateRendersets(generatedCollections)
-assignCollectionToRenderset(generatedCollections,generateRendersets)
+generatedRendersets = generateRendersets(generatedCollections)
 
+assignCollectionToRenderset()
+
+#lala()
