@@ -71,11 +71,8 @@ def generateCollections(collections):
             
             bpy.context.scene.collection.children.link(newCollection)
             generatedCollections.append(newCollection)
+            
             bpy.context.view_layer.layer_collection.children[newCollectionName].exclude = True
-
-            # renderset
-            newContext = bpy.context.scene.renderset_contexts.add()
-            newContext.custom_name = newCollection.name
 
             # objects
             duplicateObjectsInCollectionAssignModify(
@@ -85,24 +82,28 @@ def generateCollections(collections):
 
 
 def generateRendersets(collections):
+    generatedRendersets = []
     for collection in collections:
         newContext = bpy.context.scene.renderset_contexts.add()
         newContext.custom_name = collection.name
-        
+        generatedRendersets.append(newContext)
 
-    return False
+    return generatedRendersets
 
-def assignCollectionToRenderset():
+def assignCollectionToRenderset(collections, rendersets):
     # this is where we want to iterate over each context and asssign the collections that we want to render
     # for context in bpy.context.scene.render_set_contexts:
     renderset_contexts = bpy.data.scenes["Scene"].renderset_contexts
 
-    for idx, renderset_context in enumerate(renderset_contexts):
-        aName = renderset_context.custom_name
-        print(f"****************** {renderset_context.custom_name} --- {aName in renderset_context.id_data.view_layers['View Layer'].layer_collection.children.keys()}")
+    for idx, renderset in enumerate(rendersets):
+        bpy.data.scenes["Scene"].renderset_context_index=idx
+        aName = renderset.custom_name
+        # print(f"****************** {renderset.custom_name} --- {aName in renderset_contexts[idx].id_data.view_layers['View Layer'].layer_collection.children.keys()}")
         
-        if(aName in renderset_context.id_data.view_layers['View Layer'].layer_collection.children.keys()):
-            renderset_context.id_data.view_layers['View Layer'].layer_collection.children[aName].exclude = False
+        if(aName in renderset.id_data.view_layers['View Layer'].layer_collection.children.keys()):
+            bpy.data.scenes["Scene"].view_layers["View Layer"].layer_collection.children[aName].exclude=False
+
+        time.sleep(1)
 
     return False
 
@@ -112,5 +113,6 @@ def assignCollectionToRenderset():
 
 templates = getAllTemplateCollections()
 generatedCollections = generateCollections(templates)
-assignCollectionToRenderset()
+generateRendersets = generateRendersets(generatedCollections)
+assignCollectionToRenderset(generatedCollections,generateRendersets)
 
