@@ -2,12 +2,30 @@
 import bpy
 import time
 
+
+
+#these values can probably be retrieved from the current scene and view layer
+###########################
+scene = "Scene"
+viewlayer = "View Layer"
+###########################
 filename = bpy.path.basename(
     bpy.context.blend_data.filepath).removesuffix('.blend')
-templateString = "template_"
-templateStringsToIncludeInAll = ['studio_']
+templateString = "template"
+alwaysInclude = 'studio'
 prefix = "decorplus"
 variations = {
+    "template_classic_ventilated_closet_style_card": {
+    "white_white": {"dummyMetal": "metalPaintedWhite", "dummyPlastic": "plasticWhite"},
+    "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyPlastic": "plasticWhite"},
+    "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyPlastic": "plasticWhite"},
+    "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyPlastic": "plasticWhite"},
+    "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyPlastic": "plasticGray"},
+    "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyPlastic": "plasticGray"},
+    "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyPlastic": "plasticGray"},
+    "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyPlastic": "plasticGray"},
+    },
+    "template_classic_trim_closet_style_card": {
     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyWood": "woodWhite", "dummyPlastic": "plasticWhite"},
     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyWood": "woodGrey", "dummyPlastic": "plasticWhite"},
     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyWood": "woodBirch", "dummyPlastic": "plasticWhite"},
@@ -16,6 +34,8 @@ variations = {
     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyWood": "woodGrey", "dummyPlastic": "plasticGray"},
     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyWood": "woodBirch", "dummyPlastic": "plasticGray"},
     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyWood": "woodWalnut", "dummyPlastic": "plasticGray"},
+    },
+
 }
 
 
@@ -33,7 +53,7 @@ def addObjectToCollection(obj, collection):
 
 
 def duplicateObjectsInCollectionAssignModify(sourceCollection, targetCollection, variations):
-    templateToRemove = f"{prefix}_{sourceCollection.name.removeprefix(templateString)}_"
+    templateToRemove = f"{prefix}_{sourceCollection.name.removeprefix(f'{templateString}_')}_"
     col = bpy.data.collections
     objects = sourceCollection.objects
 
@@ -66,7 +86,7 @@ def generateCollections(collections):
     for collection in collections:
         for variation in variations:
             # collections
-            newCollectionName = f"{prefix}_{collection.name.removeprefix(templateString)}_{variation}"
+            newCollectionName = f"{prefix}{collection.name.removeprefix(templateString)}_{variation}"
             newCollection = col.new(newCollectionName)
             
             bpy.context.scene.collection.children.link(newCollection)
@@ -75,8 +95,8 @@ def generateCollections(collections):
             bpy.context.view_layer.layer_collection.children[newCollectionName].exclude = True
 
             # objects
-#            duplicateObjectsInCollectionAssignModify(
-#                collection, newCollection, variations)
+            duplicateObjectsInCollectionAssignModify(
+               collection, newCollection, variations)
 
     return generatedCollections
 
@@ -85,35 +105,48 @@ def generateRendersets(collections):
     generatedRendersets = []
     for collection in collections:
         newContext = bpy.context.scene.renderset_contexts.add()
+        bpy.context.scene.renderset_contexts.update()
         newContext.custom_name = collection.name
         generatedRendersets.append(newContext)
 
     return generatedRendersets
 
 
+def resetAll():
+    contexts = bpy.data.scenes[scene].renderset_contexts
+    collections = bpy.data.scenes[scene].id_data.view_layers[viewlayer].layer_collection.children
+    templateToSearch = f"{prefix}_{templateString}"
+
+    # for idx in range(len(contexts.values())):
+    #     if(idx == 0):
+    #         continue
+    #     print(templateToSearch)
+    #     if(prefix in contexts[idx].custom_name):
+    #         print(f"{contexts[idx].custom_name} --- {templateToSearch in contexts[idx].custom_name}")
+    #         contexts.remove(idx)
+    #         contexts.update()
+
+    for idx in range(len(collections.values())):
+        return False
+            
+
 def assignCollectionToRenderset():
-#    bpy.data.scenes["Scene"].renderset_context_index = 0
-    
-    scene = "Scene"
-    viewlayer = "View Layer"
-    
     contexts = bpy.data.scenes[scene].renderset_contexts
     collections = bpy.data.scenes[scene].id_data.view_layers[viewlayer].layer_collection.children
 
-    print(f"**************** {len(contexts)} CONTEXTS **************** {contexts}")
-    print(f"**************** COLLECTIONS **************** {collections}")
-
     for idx in range(len(contexts.values())):
+        if(idx == 0):
+            continue
+        bpy.data.scenes[scene].renderset_context_index = idx
         rcName = contexts[idx].custom_name
-        print(f"--------------- {idx} renderset: {rcName} ---------------")
         for jdx, collection in enumerate(collections.values()):
             cName = collection.name
-            print(f"**************** collection {cName}")
             collection.exclude = True
-            if(rcName == cName):
-                print(f"**************** {cName} - {rcName} --- {cName == rcName}")
+            print(f"************************ {cName} --- {alwaysInclude in cName}")
+            if(rcName == cName or alwaysInclude in cName):
                 collection.exclude = False
-        bpy.data.scenes["Scene"].renderset_context_index = idx
+            bpy.data.scenes[scene].id_data.view_layers[viewlayer].update()
+
 
 
     return False
@@ -126,4 +159,8 @@ generatedRendersets = generateRendersets(generatedCollections)
 
 assignCollectionToRenderset()
 
+
+# resetAll()
+
+print("HELLO WORLD")
 #lala()
