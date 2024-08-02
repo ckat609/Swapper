@@ -13,28 +13,281 @@ filename = bpy.path.basename(
     bpy.context.blend_data.filepath).removesuffix('.blend')
 templateString = "template"
 alwaysInclude = 'studio'
-prefix = "decorplus"
+prefix = ""
 variations = {
     "template_classic_ventilated_closet_style_card": {
-    "white_white": {"dummyMetal": "metalPaintedWhite", "dummyPlastic": "plasticWhite"},
-    "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyPlastic": "plasticWhite"},
-    "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyPlastic": "plasticWhite"},
-    "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyPlastic": "plasticWhite"},
-    "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyPlastic": "plasticGray"},
-    "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyPlastic": "plasticGray"},
-    "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyPlastic": "plasticGray"},
-    "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyPlastic": "plasticGray"},
+        "white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyPlastic": "plasticWhite"},
+        "platinum": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyPlastic": "plasticGray"},
+        "graphite": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyPlastic": "plasticGraphite"},
     },
-    "template_classic_trim_closet_style_card": {
-    "white_white": {"dummyMetal": "metalPaintedWhite", "dummyWood": "woodWhite", "dummyPlastic": "plasticWhite"},
-    "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyWood": "woodGrey", "dummyPlastic": "plasticWhite"},
-    "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyWood": "woodBirch", "dummyPlastic": "plasticWhite"},
-    "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyWood": "woodWalnut", "dummyPlastic": "plasticWhite"},
-    "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyWood": "woodWhite", "dummyPlastic": "plasticGray"},
-    "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyWood": "woodGrey", "dummyPlastic": "plasticGray"},
-    "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyWood": "woodBirch", "dummyPlastic": "plasticGray"},
-    "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyWood": "woodWalnut", "dummyPlastic": "plasticGray"},
+    # "template_classic_trim_closet_style_card": {
+    #     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyWood": "woodWhite", "dummyPlastic": "plasticWhite", },
+    #     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyWood": "woodGrey", "dummyPlastic": "plasticWhite", },
+    #     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyWood": "woodBirch", "dummyPlastic": "plasticWhite", },
+    #     "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyWood": "woodWalnut", "dummyPlastic": "plasticWhite", },
+    #     "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyWood": "woodWhite", "dummyPlastic": "plasticGray", },
+    #     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyWood": "woodGrey", "dummyPlastic": "plasticGray", },
+    #     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyWood": "woodBirch", "dummyPlastic": "plasticGray", },
+    #     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyWood": "woodWalnut", "dummyPlastic": "plasticGray", },
+    #     "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyWood": "woodWhite", "dummyPlastic": "plasticGraphite", },
+    #     "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyWood": "woodGrey", "dummyPlastic": "plasticGraphite", },
+    #     "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyWood": "woodBirch", "dummyPlastic": "plasticGraphite", },
+    #     "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyWood": "woodWalnut", "dummyPlastic": "plasticGraphite", },
+    # },
+    "template_classic_decor_closet_style_card": {
+        "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyWood":"woodWhite", "dummyPlastic": "plasticWhite"},
+        "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyWood":"woodGrey", "dummyPlastic": "plasticWhite"},
+        "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyWood":"woodBirch", "dummyPlastic": "plasticWhite"},
+        "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyWood":"woodWalnut", "dummyPlastic": "plasticWhite"},
+        "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyWood":"woodWhite", "dummyPlastic": "plasticGray"},
+        "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyWood":"woodGrey", "dummyPlastic": "plasticGray"},
+        "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyWood":"woodBirch", "dummyPlastic": "plasticGray"},
+        "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyWood":"woodWalnut", "dummyPlastic": "plasticGray"},
+        "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyWood":"woodWhite", "dummyPlastic": "plasticGraphite"},
+        "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyWood":"woodGrey", "dummyPlastic": "plasticGraphite"},
+        "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyWood":"woodBirch", "dummyPlastic": "plasticGraphite"},
+        "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyWood":"woodWalnut", "dummyPlastic": "plasticGraphite"},
     },
+    # "template_classic_trim_fronts_classic_closet_style_card": {
+    #     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+        
+    #     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+        
+    #     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    # },
+    # "template_classic_trim_fronts_flat_closet_style_card": {
+    #     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+        
+    #     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+        
+    #     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    # },
+    # "template_classic_trim_fronts_modern_closet_style_card": {
+    #     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+        
+    #     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+        
+    #     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    # },
+    # "template_classic_decor_fronts_classic_closet_style_card": {
+    #     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+        
+    #     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+        
+    #     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    # },
+    # "template_classic_decor_fronts_flat_closet_style_card": {
+    #     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+        
+    #     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+        
+    #     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    # },
+    # "template_classic_decor_fronts_modern_closet_style_card": {
+    #     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticWhite"},
+    #     "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGray"},
+    #     "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalDoorknobBrushed", "dummyPlastic": "plasticGraphite"},
+        
+    #     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticWhite"},
+    #     "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGray"},
+    #     "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"metalChrome", "dummyPlastic": "plasticGraphite"},
+        
+    #     "white_white": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "white_grey": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "white_birch": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "white_walnut": {"dummyMetal": "metalPaintedWhite", "dummyMesh": "metalMeshWhite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticWhite"},
+    #     "platinum_white": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "platinum_grey": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "platinum_birch": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "platinum_walnut": {"dummyMetal": "metalPaintedPlatinum", "dummyMesh": "metalMeshPlatinum", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGray"},
+    #     "graphite_white": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_grey": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_birch": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    #     "graphite_walnut": {"dummyMetal": "metalPaintedGraphite", "dummyMesh": "metalMeshGraphite", "dummyMetalKnob":"bronzeOilRubbed", "dummyPlastic": "plasticGraphite"},
+    # },
 
 }
 
@@ -51,9 +304,9 @@ def addObjectToCollection(obj, collection):
     collectionName = collection.name
     collection.objects.link(obj)
 
-
 def duplicateObjectsInCollectionAssignModify(sourceCollection, targetCollection, variations):
-    templateToRemove = f"{prefix}_{sourceCollection.name.removeprefix(f'{templateString}_')}_"
+    prefixStr = f"{prefix}_" if len(prefix) > 0 else""
+    templateToRemove = f"{prefixStr}{sourceCollection.name.removeprefix(f'{templateString}_')}"
     col = bpy.data.collections
     objects = sourceCollection.objects
 
@@ -64,10 +317,9 @@ def duplicateObjectsInCollectionAssignModify(sourceCollection, targetCollection,
 
         # replace materials
         for slot in newObj.material_slots:
-            pref = targetCollection.name.removeprefix(templateToRemove)
-            if (pref in variations and slot.material.name in variations[pref]):
-                # if (slot.material.name in variations[pref]):
-                mat = variations[pref][slot.material.name]
+            pref = targetCollection.name.removeprefix(f"{templateToRemove}_")
+            if (pref in variations[sourceCollection.name] and slot.material.name in variations[sourceCollection.name][pref]):
+                mat = variations[sourceCollection.name][pref][slot.material.name]
                 slot.material = bpy.data.materials[mat]
 
 
@@ -84,21 +336,45 @@ def generateCollections(collections):
     col = bpy.data.collections
     generatedCollections = []
     for collection in collections:
-        for variation in variations:
-            # collections
-            newCollectionName = f"{prefix}{collection.name.removeprefix(templateString)}_{variation}"
-            newCollection = col.new(newCollectionName)
-            
-            bpy.context.scene.collection.children.link(newCollection)
-            generatedCollections.append(newCollection)
-            
-            bpy.context.view_layer.layer_collection.children[newCollectionName].exclude = True
+        for idx, template in enumerate(variations):
+            for variation in variations[template]:
+                #collections
+                prefixStr = f"{prefix}_" if len(prefix) > 0 else""
+                newCollectionName = f"{prefixStr}{collection.name.removeprefix(f'{templateString}_')}_{variation}"
+                if(collection.name == list(variations.keys())[idx]):
+                    newCollection = col.new(newCollectionName)
+                    
+                    bpy.context.scene.collection.children.link(newCollection)
+                    generatedCollections.append(newCollection)
+                    
+                    bpy.context.view_layer.layer_collection.children[newCollectionName].exclude = True
 
-            # objects
-            duplicateObjectsInCollectionAssignModify(
-               collection, newCollection, variations)
+                    # objects
+                    duplicateObjectsInCollectionAssignModify(
+                    collection, newCollection, variations)
+                    
 
     return generatedCollections
+
+# def generateCollections(collections):
+#     col = bpy.data.collections
+#     generatedCollections = []
+#     for collection in collections:
+#         for variation in variations:
+#             # collections
+#             newCollectionName = f"{prefix}{collection.name.removeprefix(templateString)}_{variation}"
+#             newCollection = col.new(newCollectionName)
+            
+#             bpy.context.scene.collection.children.link(newCollection)
+#             generatedCollections.append(newCollection)
+            
+#             bpy.context.view_layer.layer_collection.children[newCollectionName].exclude = True
+
+#             # objects
+#             duplicateObjectsInCollectionAssignModify(
+#                collection, newCollection, variations)
+
+#     return generatedCollections
 
 
 def generateRendersets(collections):
