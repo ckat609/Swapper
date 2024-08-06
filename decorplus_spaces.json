@@ -1,0 +1,1589 @@
+{
+    "template_decorplus_wire_mesh": {
+        "scene": "Scene",
+        "viewlaye": "View Layer",
+        "camera": "cameraMain",
+        "materials": {
+            "white_white": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_grey": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_birch": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_stainedbirch": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite"
+            },
+            "grey_white": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_grey": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_birch": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_stainedbirch": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray"
+            }
+        }
+    },
+    "template_decorplus_trim_mesh": {
+        "scene": "Scene",
+        "viewlaye": "View Layer",
+        "camera": "cameraMain",
+        "materials": {
+            "white_white": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_grey": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_birch": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_stainedbirch": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite"
+            },
+            "grey_white": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_grey": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_birch": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_stainedbirch": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray"
+            }
+        }
+    },
+    "template_decorplus_decor_mesh": {
+        "scene": "Scene",
+        "viewlaye": "View Layer",
+        "camera": "cameraMain",
+        "materials": {
+            "white_white": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_grey": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_birch": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_stainedbirch": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite"
+            },
+            "grey_white": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_grey": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_birch": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_stainedbirch": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray"
+            }
+        }
+    },
+    "template_decorplus_wire_solid_classic_top": {
+        "scene": "Scene",
+        "viewlaye": "View Layer",
+        "camera": "cameraMain",
+        "materials": {
+            "white_white_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_grey_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_birch_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_stainedbirch_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_white_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_grey_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_birch_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_stainedbirch_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            
+            "white_white_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_grey_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_birch_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_stainedbirch_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_white_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_grey_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_birch_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_stainedbirch_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            
+            "white_white_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_grey_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_birch_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_stainedbirch_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_white_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_grey_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_birch_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_stainedbirch_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            }
+        }
+    },
+
+    "template_decorplus_wire_solid_flat_top": {
+        "scene": "Scene",
+        "viewlaye": "View Layer",
+        "camera": "cameraMain",
+        "materials": {
+            "white_white_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_grey_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_birch_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_stainedbirch_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_white_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_grey_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_birch_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_stainedbirch_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            
+            "white_white_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_grey_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_birch_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_stainedbirch_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_white_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_grey_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_birch_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_stainedbirch_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            
+            "white_white_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_grey_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_birch_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_stainedbirch_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_white_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_grey_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_birch_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_stainedbirch_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            }
+        }
+    },
+
+    "template_decorplus_wire_solid_modern_top": {
+        "scene": "Scene",
+        "viewlaye": "View Layer",
+        "camera": "cameraMain",
+        "materials": {
+            "white_white_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_grey_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_birch_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_stainedbirch_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_white_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_grey_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_birch_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_stainedbirch_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            
+            "white_white_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_grey_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_birch_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_stainedbirch_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_white_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_grey_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_birch_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_stainedbirch_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            
+            "white_white_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_grey_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_birch_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_stainedbirch_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_white_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_grey_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_birch_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_stainedbirch_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            }
+        }
+    },
+
+    "template_decorplus_wire_solid_handlebar_top": {
+        "scene": "Scene",
+        "viewlaye": "View Layer",
+        "camera": "cameraMain",
+        "materials": {
+            "white_white_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_grey_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_birch_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_stainedbirch_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_white_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_grey_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_birch_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_stainedbirch_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            
+            "white_white_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_grey_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_birch_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_stainedbirch_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_white_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_grey_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_birch_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_stainedbirch_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            
+            "white_white_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_grey_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_birch_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_stainedbirch_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_white_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_grey_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_birch_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_stainedbirch_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            }
+        }
+    },
+    "template_decorplus_wire_solid_classic_middle": {
+        "scene": "Scene",
+        "viewlaye": "View Layer",
+        "camera": "cameraMain",
+        "materials": {
+            "white_white_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_grey_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_birch_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_stainedbirch_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_white_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_grey_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_birch_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_stainedbirch_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            
+            "white_white_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_grey_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_birch_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_stainedbirch_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_white_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_grey_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_birch_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_stainedbirch_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            
+            "white_white_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_grey_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_birch_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_stainedbirch_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_white_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_grey_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_birch_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_stainedbirch_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            }
+        }
+    },
+
+    "template_decorplus_wire_solid_flat_middle": {
+        "scene": "Scene",
+        "viewlaye": "View Layer",
+        "camera": "cameraMain",
+        "materials": {
+            "white_white_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_grey_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_birch_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_stainedbirch_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_white_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_grey_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_birch_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_stainedbirch_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            
+            "white_white_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_grey_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_birch_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_stainedbirch_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_white_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_grey_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_birch_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_stainedbirch_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            
+            "white_white_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_grey_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_birch_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_stainedbirch_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_white_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_grey_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_birch_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_stainedbirch_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            }
+        }
+    },
+
+    "template_decorplus_wire_solid_modern_middle": {
+        "scene": "Scene",
+        "viewlaye": "View Layer",
+        "camera": "cameraMain",
+        "materials": {
+            "white_white_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_grey_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_birch_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_stainedbirch_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_white_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_grey_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_birch_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_stainedbirch_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            
+            "white_white_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_grey_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_birch_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_stainedbirch_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_white_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_grey_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_birch_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_stainedbirch_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            
+            "white_white_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_grey_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_birch_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_stainedbirch_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_white_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_grey_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_birch_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_stainedbirch_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            }
+        }
+    },
+
+    "template_decorplus_wire_solid_handlebar_middle": {
+        "scene": "Scene",
+        "viewlaye": "View Layer",
+        "camera": "cameraMain",
+        "materials": {
+            "white_white_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_grey_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_birch_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "white_stainedbirch_nickel": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_white_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_grey_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_birch_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            "grey_stainedbirch_nickel": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalDoorknobBrushed"
+            },
+            
+            "white_white_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_grey_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_birch_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "white_stainedbirch_chrome": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_white_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_grey_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_birch_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            "grey_stainedbirch_chrome": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalChrome"
+            },
+            
+            "white_white_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_grey_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_birch_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "white_stainedbirch_bronze": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_white_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_grey_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_birch_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            },
+            "grey_stainedbirch_bronze": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray",
+                "dummyMetalKnob": "metalBronzeOilRubbed"
+            }
+        }
+    }
+}
