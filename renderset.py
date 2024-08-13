@@ -38,7 +38,8 @@ import json
 ###########################
 scene = "Scene"
 viewlayer = "View Layer"
-camera = "mainCamera"
+camera = "mainCameraTop"
+world = "World"
 ###########################
 templateString = "tmp"
 alwaysInclude = 'studio'
@@ -48,14 +49,14 @@ prefix = ""
 def getJson(json_file):
     data = {}
     script_file = os.path.realpath(__file__)
-    directory = os.path.dirname(script_file)
+    directory = bpy.path.abspath("//")
     jasonFile = os.path.join(directory, json_file)
     with open(jasonFile) as data_file:
         data = json.load(data_file)
 
     return data
 
-variations = getJson('decorplus_spaces.json')
+variations = getJson('shelves.json')
 
 
 # def addObjectToCollection(obj, collection):
@@ -71,11 +72,11 @@ def duplicateObjectsInCollectionAssignModify(sourceCollection, targetCollection,
 
     for obj in objects:
         newObj = obj.copy()
-        # newObj.location = obj.location
-        # targetCollection.objects.link(newObj)
+        newObj.location = obj.location
+        targetCollection.objects.link(newObj)
 
         # replace materials
-        for slot in obj.material_slots:
+        for slot in newObj.material_slots:
             pref = targetCollection.name.removeprefix(f"{templateToRemove}_")
             if (pref in variations[sourceCollection.name]['materials'] and slot.material.name in variations[sourceCollection.name]['materials'][pref]):
                 mat = variations[sourceCollection.name]['materials'][pref][slot.material.name]
@@ -106,11 +107,11 @@ def generateCollections(templates):
                 #collections
                 prefixStr = f"{prefix}_" if len(prefix) > 0 else""
                 newCollectionName = f"{prefixStr}{template.name.removeprefix(f'{templateString}_')}_{variation}"
-                newCollection = template.copy()
-                newCollection.name = newCollectionName
-                # bpy.data.scenes[scene].collection.children.link(newCollection)
+                newCollection = bpy.data.collections.new(newCollectionName)
+#                newCollection.name = newCollectionName
+                bpy.data.scenes[scene].collection.children.link(newCollection)
                 
-                bpy.context.scene.collection.children.link(newCollection)
+#                bpy.context.scene.collection.children.link(newCollection)
                 generatedCollections.append(newCollection)
                 
                 bpy.context.view_layer.layer_collection.children[newCollectionName].exclude = True
@@ -133,7 +134,7 @@ def generateRendersets(collections):
         newContext.custom_name = collection.name
         generatedRendersets.append(newContext)
 
-        bpy.data.scenes[scene].camera = bpy.data.objects[camera]
+        
 
     return generatedRendersets
 
@@ -160,6 +161,8 @@ def assignCollectionToRenderset():
         if(idx == 0):
             continue
         bpy.data.scenes[scene].renderset_context_index = idx
+        bpy.context.scene.camera = bpy.data.objects[camera]
+        bpy.context.scene.world = bpy.data.worlds[world]
         rcName = contexts[idx].custom_name
         print(f"************************ {rcName}")
         for jdx, collection in enumerate(collections.values()):

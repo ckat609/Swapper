@@ -1,0 +1,386 @@
+{
+    "tmp_hang36_ventilated": {
+        "scene": "Scene",
+        "viewlayer": "View Layer",
+        "camera": "cameraMainTop",
+        "world": "World",
+        "materials": {
+            "white": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyPlastic": "plasticWhite"
+            },
+            "grey": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyPlastic": "plasticGray"
+            }
+        }
+    },
+    "tmp_hang36_fascia": {
+        "scene": "Scene",
+        "viewlayer": "View Layer",
+        "camera": "cameraMainTop",
+        "world": "World",
+        "materials": {
+            "white_white": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_grey": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_birch": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_stainedbirch": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite"
+            },
+            "grey_white": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_grey": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_birch": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_stainedbirch": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray"
+            }
+        }
+    },
+    "tmp_hang36_decor": {
+        "scene": "Scene",
+        "viewlayer": "View Layer",
+        "camera": "cameraMainTop",
+        "world": "World",
+        "materials": {
+            "white_white": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_grey": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_birch": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_stainedbirch": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite"
+            },
+            "grey_white": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_grey": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_birch": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_stainedbirch": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray"
+            }
+        }
+    },
+    "tmp_hang42_ventilated": {
+        "scene": "Scene",
+        "viewlayer": "View Layer",
+        "camera": "cameraMainTop",
+        "world": "World",
+        "materials": {
+            "white": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyPlastic": "plasticWhite"
+            },
+            "grey": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyPlastic": "plasticGray"
+            }
+        }
+    },
+    "tmp_hang42_fascia": {
+        "scene": "Scene",
+        "viewlayer": "View Layer",
+        "camera": "cameraMainTop",
+        "world": "World",
+        "materials": {
+            "white_white": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_grey": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_birch": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_stainedbirch": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite"
+            },
+            "grey_white": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_grey": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_birch": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_stainedbirch": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray"
+            }
+        }
+    },
+    "tmp_hang42_decor": {
+        "scene": "Scene",
+        "viewlayer": "View Layer",
+        "camera": "cameraMainTop",
+        "world": "World",
+        "materials": {
+            "white_white": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_grey": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_birch": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_stainedbirch": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite"
+            },
+            "grey_white": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_grey": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_birch": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_stainedbirch": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray"
+            }
+        }
+    },
+    "tmp_hang42bottom_ventilated": {
+        "scene": "Scene",
+        "viewlayer": "View Layer",
+        "camera": "cameraMainTop",
+        "world": "World",
+        "materials": {
+            "white": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyPlastic": "plasticWhite"
+            },
+            "grey": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyPlastic": "plasticGray"
+            }
+        }
+    },
+    "tmp_hang42bottom_fascia": {
+        "scene": "Scene",
+        "viewlayer": "View Layer",
+        "camera": "cameraMainTop",
+        "world": "World",
+        "materials": {
+            "white_white": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_grey": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_birch": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_stainedbirch": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite"
+            },
+            "grey_white": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_grey": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_birch": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_stainedbirch": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray"
+            }
+        }
+    },
+    "tmp_hang42bottom_decor": {
+        "scene": "Scene",
+        "viewlayer": "View Layer",
+        "camera": "cameraMainTop",
+        "world": "World",
+        "materials": {
+            "white_white": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_grey": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_birch": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_stainedbirch": {
+                "dummyMetal": "metalPaintedMatteWhite",
+                "dummyMesh": "metalMeshMatteWhite",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticWhite"
+            },
+            "grey_white": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_grey": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_birch": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodNaturalBirch",
+                "dummyPlastic": "plasticGray"
+            },
+            "grey_stainedbirch": {
+                "dummyMetal": "metalPaintedSatinGrey",
+                "dummyMesh": "metalMeshSatinGrey",
+                "dummyWood": "woodStainedBirch",
+                "dummyPlastic": "plasticGray"
+            }
+        }
+    }
+}
