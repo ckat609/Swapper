@@ -1,0 +1,112 @@
+{
+    "tmp_product_preview1": {
+        "scene": "Scene",
+        "viewlayer": "View Layer",
+        "camera": "cameraMain",
+        "materials": {
+            "white_white": {
+                "dummyMetal": "metalPaintedWhite",
+                "dummyMesh": "metalMeshWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_grey": {
+                "dummyMetal": "metalPaintedWhite",
+                "dummyMesh": "metalMeshWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_birch": {
+                "dummyMetal": "metalPaintedWhite",
+                "dummyMesh": "metalMeshWhite",
+                "dummyWood": "woodWalnut",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_walnut": {
+                "dummyMetal": "metalPaintedWhite",
+                "dummyMesh": "metalMeshWhite",
+                "dummyWood": "woodWalnut",
+                "dummyPlastic": "plasticWhite"
+            },
+            "platinum_white": {
+                "dummyMetal": "metalPaintedPlatinum",
+                "dummyMesh": "metalMeshPlatinum",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray"
+            },
+            "platinum_grey": {
+                "dummyMetal": "metalPaintedPlatinum",
+                "dummyMesh": "metalMeshPlatinum",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray"
+            },
+            "platinum_birch": {
+                "dummyMetal": "metalPaintedPlatinum",
+                "dummyMesh": "metalMeshPlatinum",
+                "dummyWood": "woodWalnut",
+                "dummyPlastic": "plasticGray"
+            },
+            "platinum_walnut": {
+                "dummyMetal": "metalPaintedPlatinum",
+                "dummyMesh": "metalMeshPlatinum",
+                "dummyWood": "woodWalnut",
+                "dummyPlastic": "plasticGray"
+            }
+        }
+    },
+    "tmp_product_preview2": {
+        "scene": "Scene",
+        "viewlayer": "View Layer",
+        "camera": "cameraMain",
+        "materials": {
+            "white_white": {
+                "dummyMetal": "metalPaintedWhite",
+                "dummyMesh": "metalMeshWhite",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_grey": {
+                "dummyMetal": "metalPaintedWhite",
+                "dummyMesh": "metalMeshWhite",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_birch": {
+                "dummyMetal": "metalPaintedWhite",
+                "dummyMesh": "metalMeshWhite",
+                "dummyWood": "woodWalnut",
+                "dummyPlastic": "plasticWhite"
+            },
+            "white_walnut": {
+                "dummyMetal": "metalPaintedWhite",
+                "dummyMesh": "metalMeshWhite",
+                "dummyWood": "woodWalnut",
+                "dummyPlastic": "plasticWhite"
+            },
+            "platinum_white": {
+                "dummyMetal": "metalPaintedPlatinum",
+                "dummyMesh": "metalMeshPlatinum",
+                "dummyWood": "woodWhite",
+                "dummyPlastic": "plasticGray"
+            },
+            "platinum_grey": {
+                "dummyMetal": "metalPaintedPlatinum",
+                "dummyMesh": "metalMeshPlatinum",
+                "dummyWood": "woodGrey",
+                "dummyPlastic": "plasticGray"
+            },
+            "platinum_birch": {
+                "dummyMetal": "metalPaintedPlatinum",
+                "dummyMesh": "metalMeshPlatinum",
+                "dummyWood": "woodWalnut",
+                "dummyPlastic": "plasticGray"
+            },
+            "platinum_walnut": {
+                "dummyMetal": "metalPaintedPlatinum",
+                "dummyMesh": "metalMeshPlatinum",
+                "dummyWood": "woodWalnut",
+                "dummyPlastic": "plasticGray"
+            }
+        }
+    }
+}
