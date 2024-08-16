@@ -41,6 +41,7 @@ viewlayer = "View Layer"
 camera = "mainCameraTop"
 world = "World"
 ###########################
+clearAllContexts = True
 templateString = "tmp"
 alwaysInclude = 'studio'
 prefix = ""
@@ -98,12 +99,9 @@ def generateCollections(templates):
     generatedCollections = []
 
     for template in templates:
-        # print(f"***** template: {template.name}")
-        # print(f"***** keys: { list(variations.keys())}")
-        # print(f"***** template: {template.name}")
-        if(template.name in list(variations.keys())):
-            # print(f"*************** IM IN!!!!: {template.name}")
-            for variation in variations[f"{template.name}"]["materials"]:
+        if(template.name in list(variations.keys()) and variations[f"{template.name}"]["enabled"] == "True"):
+            varies = variations[f"{template.name}"]["materials"]
+            for jdx, variation in enumerate(varies):
                 #collections
                 prefixStr = f"{prefix}_" if len(prefix) > 0 else""
                 newCollectionName = f"{prefixStr}{template.name.removeprefix(f'{templateString}_')}_{variation}"
@@ -124,6 +122,10 @@ def generateCollections(templates):
 
 
 def generateRendersets(collections):
+    if(clearAllContexts == True):
+        bpy.data.scenes[scene].renderset_contexts.clear()
+        bpy.data.scenes[scene].renderset_contexts.update()
+    
     generatedRendersets = []
     prefixStr = f"{prefix}_" if len(prefix) > 0 else""
     
@@ -138,16 +140,22 @@ def generateRendersets(collections):
 
     return generatedRendersets
 
+def del_collection(coll):
+    for c in coll.children:
+        del_collection(c)
+    bpy.data.collections.remove(coll,do_unlink=True)
 
 def resetAll():
     contexts = bpy.data.scenes[scene].renderset_contexts
-    collections = bpy.data.scenes[scene].id_data.view_layers[viewlayer].layer_collection.children
-    templateToSearch = f"{prefix}_{templateString}"
+    # contexts.clear()
+    # contexts.update()
 
-    for idx, context in enumerate(contexts.values()):
-        print(f"{context.custom_name}")
-        if(context.custom_name != 'New Context'):
-            contexts.remove(idx)
+    collections = bpy.data.scenes['Scene'].id_data.view_layers['View Layer'].layer_collection.children
+    filteredCollections = list(filter(lambda name: ('studio_' not in name and 'tmp_' not in name), collections))
+    
+
+    for collection in filteredCollections:
+        print(f"*** {collection.name}")
     
     contexts.update()
     return False
@@ -161,23 +169,27 @@ def assignCollectionToRenderset():
         if(idx == 0):
             continue
         bpy.data.scenes[scene].renderset_context_index = idx
-        bpy.context.scene.camera = bpy.data.objects[camera]
-        bpy.context.scene.world = bpy.data.worlds[world]
+        bpy.context.scene.camera = bpy.data.objects["mainCameraBottom"]
+        bpy.context.scene.world = bpy.data.worlds["World"]
         rcName = contexts[idx].custom_name
-        print(f"************************ {rcName}")
+        
         for jdx, collection in enumerate(collections.values()):
             cName = collection.name
             collection.exclude = True
-            print(f"******************* {alwaysInclude in cName}")
+            
             if(rcName == cName or alwaysInclude in cName):
                 collection.exclude = False
             bpy.data.scenes[scene].id_data.view_layers[viewlayer].update()
+        print(f"************** {idx} of {len(contexts.values())} variation")
 
+    print(f"************** {len(contexts.values())} of {len(contexts.values())} variation")
 
 
     return False
 
 
+
+print("HELLO WORLD")
 
 templates = getAllTemplateCollections()
 generatedCollections = generateCollections(templates)
@@ -185,9 +197,4 @@ generatedRendersets = generateRendersets(generatedCollections)
 
 assignCollectionToRenderset()
 
-
-# resetAll()
-
-
-print("HELLO WORLD")
-#lala()
+print("GOODBYE WORLD")
