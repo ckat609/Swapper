@@ -2,37 +2,6 @@ import bpy
 import os
 import json
 
-# template_decorplus_wire_mesh
-# template_decorplus_trim_mesh
-# template_decorplus_wood_mesh
-# template_decorplus_wire_solid
-# template_decorplus_trim_solid
-# template_decorplus_wood_solid
-# template_decorplus_wire_solid_handlebar_top
-# template_decorplus_wire_solid_handlebar_middle
-# template_decorplus_trim_solid_handlebar_top
-# template_decorplus_trim_solid_handlebar_middle
-# template_decorplus_wood_solid_handlebar_top
-# template_decorplus_wood_solid_handlebar_middle
-# template_decorplus_wire_solid_classic_top
-# template_decorplus_wire_solid_classic_middle
-# template_decorplus_trim_solid_classic_top
-# template_decorplus_trim_solid_classic_middle
-# template_decorplus_wood_solid_classic_top
-# template_decorplus_wood_solid_classic_middle
-# template_decorplus_wire_solid_flat_top
-# template_decorplus_wire_solid_flat_middle
-# template_decorplus_trim_solid_flat_top
-# template_decorplus_trim_solid_flat_middle
-# template_decorplus_wood_solid_flat_top
-# template_decorplus_wood_solid_flat_middle
-# template_decorplus_wire_solid_modern_top
-# template_decorplus_wire_solid_modern_middle
-# template_decorplus_trim_solid_modern_top
-# template_decorplus_trim_solid_modern_middle
-# template_decorplus_wood_solid_modern_top
-# template_decorplus_wood_solid_modern_middle
-
 
 #these values can probably be retrieved from the current scene and view layer
 ###########################
@@ -57,13 +26,13 @@ def getJson(json_file):
 
     return data
 
-variations = getJson('shelves.json')
+variations = getJson('test.json')
 
 
-# def addObjectToCollection(obj, collection):
-#     # col = bpy.data.collections
-#     # collectionName = collection.name
-#     collection.objects.link(obj)
+def addObjectToCollection(obj, collection):
+    # col = bpy.data.collections
+    # collectionName = collection.name
+    collection.objects.link(obj)
 
 def duplicateObjectsInCollectionAssignModify(sourceCollection, targetCollection, variations):
     prefixStr = f"{prefix}_" if len(prefix) > 0 else""
